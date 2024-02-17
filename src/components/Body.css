@@ -1,0 +1,77 @@
+/* src/components/Body.css */
+
+/* Grid container for the body */
+.body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Individual box styling */
+.box {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Styling for the image container within each box */
+.image-container {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Styling for the images within the image container */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
+}
+
+/* Styling for the overlay on hover */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+  transition: background-color 0.3s ease; /* Smooth transition for the overlay */
+}
+
+/* Styling for details section within each box */
+.details {
+  position: relative;
+  padding: 10px;
+  text-align: left;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+/* Styling for specific details within the details section */
+.detail {
+  text-align: right;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Additional styling for buttons within details section */
+.details button {
+  margin-left: 187px; /* Adjust as needed */
+}
+
+/* Hover effect for the box */
+.box:hover .overlay {
+  background-color: rgba(255, 255, 255, 0); /* Change the overlay color on hover */
+}
+
+/* Zoom effect for the image on hover */
+.box:hover img {
+  transform: scale(1.05);
+}

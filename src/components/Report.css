@@ -1,0 +1,66 @@
+.report-management {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex; /* Sử dụng flexbox để căn cứ theo hàng */
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    width: 100%; /* Chiếm toàn bộ chiều rộng của flex container */
+  }
+  
+  #reports {
+    margin-top: 20px;
+    flex: 1; /* Sử dụng flex: 1 để chiếm phần còn lại của container */
+    margin-right: 20px; /* Khoảng cách giữa report và report-detail */
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .thumbnail {
+    cursor: pointer;
+  }
+  
+  .thumbnail img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  #report-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 300px; /* Đặt kích thước cố định cho report-detail */
+  }
+  
+  button {
+    background-color: #f00;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  button:hover {
+    background-color: #c00;
+  }
+  
+  .attachments img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
